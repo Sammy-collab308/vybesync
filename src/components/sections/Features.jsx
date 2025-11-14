@@ -1,11 +1,11 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation } from "swiper/modules"; // ✅ include Navigation for arrows
+import { Pagination, Navigation } from "swiper/modules"; // include Navigation for arrows
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-// 🖼️ Import local images
+// Import local images
 import feature1 from "../../assets/images/feature1.jpg";
 import feature2 from "../../assets/images/feature2.jpg";
 import feature3 from "../../assets/images/feature3.jpg";
@@ -37,13 +37,13 @@ function Features() {
           Elevating Your Event Experience
         </h2>
 
-        <p className="text-gray-700 text-lg leading-relaxed mb-6">
+        <p className="text-black text-[1.15rem] leading-relaxed mb-6">
           From massive concerts to exclusive VIP parties, we bring the energy,
           crowd, and unforgettable atmosphere. Your event becomes a moment
           people talk about for years.
         </p>
 
-        <p className="text-gray-600 text-md leading-relaxed">
+        <p className="text-black text-[1.1rem] leading-relaxed">
           We believe every moment deserves to be celebrated in style — with
           music, lights, and a vibe that connects people together.
         </p>
@@ -56,7 +56,7 @@ function Features() {
           spaceBetween={16}
           loop={true}
           pagination={{ clickable: true }}
-          navigation={true} // ✅ enables next/prev arrows
+          navigation={true}
           breakpoints={{
             320: { slidesPerView: 1 },
             640: { slidesPerView: 1 },
@@ -74,6 +74,7 @@ function Features() {
                   className="rounded-xl object-cover w-full h-[320px] md:h-[380px]"
                   loading="lazy"
                 />
+
                 {/* Overlay with event name */}
                 <div className="absolute inset-0 bg-black/40 rounded-xl flex items-end justify-center">
                   <h3 className="text-white text-lg md:text-xl font-semibold mb-4 px-4 text-center">

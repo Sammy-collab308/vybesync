@@ -12,13 +12,13 @@ function Events() {
           Discover the Rhythm of Every Moment
         </h2>
 
-        <p className="text-gray-700 text-lg leading-relaxed mb-6">
+        <p className="text-black text-[1.15rem] leading-relaxed mb-6">
           Experience unforgettable nights filled with music, energy, and pure
           connection. From rooftop sessions to massive festivals, VybeSync brings
           together people who love to celebrate life in style.
         </p>
 
-        <p className="text-gray-600 text-md leading-relaxed">
+        <p className="text-black text-[1.1rem] leading-relaxed">
           Stay tuned for upcoming shows, live performances, and exclusive
           events. Wherever the rhythm goes, we follow — and you’re invited to
           be part of the vibe.

@@ -3,31 +3,45 @@ import React from "react";
 function CTA() {
   return (
     <section
-      id="cta"
-      className="relative bg-gradient-to-r from-purple-900 via-purple-800 to-purple-900 text-white py-20 px-6 flex flex-col items-center justify-center text-center overflow-hidden"
+      className="w-full py-20 px-6 md:px-12 bg-gradient-to-r from-purple-900 via-purple-800 to-purple-900 text-white"
     >
-      {/* Optional soft overlay for glow effect */}
-      <div className="absolute inset-0 bg-purple-900/50 z-0"></div>
+      <div className="max-w-[1200px] mx-auto grid md:grid-cols-2 gap-12 items-center">
 
-      {/* Content */}
-      <div className="relative z-10 max-w-2xl mx-auto space-y-6">
-        <h2 className="text-3xl md:text-5xl font-bold leading-tight">
-          Ready to Host Your Next Unforgettable Event?
-        </h2>
+        {/* Left Image */}
+        <div className="flex justify-center">
+          <img
+            src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=900&q=80"
+            alt="Event Spotlight"
+            className="rounded-2xl shadow-2xl w-full max-w-md"
+          />
+        </div>
 
-        <p className="text-purple-200 text-lg">
-          Join thousands of organizers using{" "}
-          <span className="font-semibold text-white">VybeSync</span> to create,
-          manage, and elevate every event experience.
-        </p>
+        {/* Right Content */}
+        <div>
+          <h2 className="text-4xl font-bold leading-tight">
+            Get Exclusive Access <br /> to Upcoming <span className="text-yellow-400">VybeSync</span> Events
+          </h2>
 
-        <button className="mt-4 bg-white text-purple-800 font-semibold px-8 py-3 rounded-full shadow-lg hover:bg-purple-100 transition-all duration-300">
-          Get Started
-        </button>
+          <p className="mt-4 text-gray-300">
+            Join our mailing list and be the first to know about concerts,
+            festivals, and exclusive city events.
+          </p>
+
+          {/* Email Input + Button */}
+          <div className="mt-8 flex flex-col sm:flex-row gap-4">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              className="px-5 py-3 rounded-lg w-full text-gray-900 outline-none"
+            />
+
+            <button className="bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-lg font-medium shadow-lg transition">
+              Subscribe
+            </button>
+          </div>
+        </div>
+
       </div>
-
-      {/* Soft glow at the bottom */}
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[500px] h-[200px] bg-purple-500/30 blur-3xl rounded-full"></div>
     </section>
   );
 }

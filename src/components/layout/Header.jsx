@@ -15,11 +15,11 @@ function Header() {
       className="relative w-full h-screen flex flex-col justify-center items-center text-center bg-cover bg-center"
       style={{ backgroundImage: `url(${bgImage})` }}
     >
-
       {/* Navigation */}
       <div className="absolute top-6 w-full max-w-[1200px] px-8 flex justify-between items-center">
-        <h1 className="text-3xl font-bold text-blue-500 tracking-wide">
-          Vybe<span className="text-yellow-400">Sync</span>
+        <h1 className="text-3xl font-bold tracking-wide">
+          <span className="text-purple-500">Vybe</span>
+          <span className="text-yellow-400">Sync</span>
         </h1>
 
         <nav className="flex gap-12 text-white font-medium">
@@ -49,7 +49,7 @@ function Header() {
 
       {/* Floating Stats */}
       <div className="absolute bottom-[-75px] left-1/2 -translate-x-1/2 w-[90%] max-w-[1100px]">
-        <div className="bg-black/70 backdrop-blur-md border border-yellow-400 rounded-2xl shadow-2xl h-[150px] flex justify-around items-center text-white px-6">
+        <div className="bg-gradient-to-r from-purple-900 via-purple-800 to-purple-900 backdrop-blur-md border border-yellow-400 rounded-2xl shadow-2xl h-[150px] flex justify-around items-center text-white px-6">
 
           {stats.map((item, index) => (
             <div key={index} className="flex items-center gap-6">
@@ -66,7 +66,6 @@ function Header() {
 
         </div>
       </div>
-
     </header>
   );
 }
