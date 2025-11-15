@@ -16,7 +16,7 @@ function Header() {
       style={{ backgroundImage: `url(${bgImage})` }}
     >
       {/* Navigation */}
-      <div className="absolute top-6 w-full max-w-[1200px] px-8 flex justify-between items-center">
+      <div className="absolute top-6 w-full max-w-[1200px] mx-auto px-8 flex justify-between items-center">
         <h1 className="text-3xl font-bold tracking-wide">
           <span className="text-purple-500">Vybe</span>
           <span className="text-yellow-400">Sync</span>
@@ -31,10 +31,11 @@ function Header() {
       </div>
 
       {/* Hero Content */}
-      <div className="text-white max-w-[850px] px-4">
+      <div className="text-white max-w-[850px] px-4 flex flex-col justify-center items-center">
         <h1 className="text-5xl md:text-6xl font-bold mb-4 drop-shadow-lg">
           Discover Unforgettable Events
         </h1>
+
         <p className="text-lg md:text-xl mb-8 drop-shadow-md">
           Book your spot at the hottest events in town. Celebrate moments that matter.
         </p>
@@ -55,7 +56,9 @@ function Header() {
             <div key={index} className="flex items-center gap-6">
               <div className="text-center">
                 <h3 className="text-2xl font-bold text-yellow-400">{item.value}</h3>
-                <p className="text-gray-300 text-sm md:text-base mt-1">{item.label}</p>
+                <p className="text-gray-300 text-sm md:text-base mt-1">
+                  {item.label}
+                </p>
               </div>
 
               {index !== stats.length - 1 && (

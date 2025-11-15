@@ -44,7 +44,7 @@ function Testimonial() {
     >
       {/* Left Content */}
       <div className="max-w-md space-y-5">
-        <h2 className="text-3xl md:text-4xl font-bold text-blue-600">
+         <h2 className="text-4xl md:text-5xl font-bold text-purple-600 mb-6 leading-snug">
           What People Are Saying About Us
         </h2>
 

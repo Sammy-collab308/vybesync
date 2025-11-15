@@ -33,7 +33,8 @@ function Features() {
     >
       {/* Left Side - Text */}
       <div className="text-center md:text-left max-w-lg">
-        <h2 className="text-4xl font-bold text-blue-600 mb-4">
+        <h2 className="text-4xl font-bold bg-gradient-to-r from-purple-900 via-purple-700 to-purple-900 bg-clip-text text-transparent mb-4">
+
           Elevating Your Event Experience
         </h2>
 

@@ -1,5 +1,3 @@
-import React from "react";
-
 function Events() {
   return (
     <section
@@ -8,9 +6,10 @@ function Events() {
     >
       {/* Left Text Section */}
       <div className="text-center md:text-left max-w-lg">
-        <h2 className="text-4xl font-bold text-blue-600 mb-4">
+         <h2 className="text-4xl md:text-5xl font-bold text-purple-600 mb-6 leading-snug">
           Discover the Rhythm of Every Moment
         </h2>
+        
 
         <p className="text-black text-[1.15rem] leading-relaxed mb-6">
           Experience unforgettable nights filled with music, energy, and pure
@@ -26,12 +25,11 @@ function Events() {
       </div>
 
       {/* Right Image */}
-      <div className="flex-shrink-0">
+      <div className="flex-shrink-0 w-full md:w-auto">
         <img
           src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=60"
           alt="Concert crowd"
-          className="rounded-2xl shadow-lg object-cover"
-          style={{ width: "520px", height: "420px" }}
+          className="rounded-2xl shadow-lg object-cover w-full h-auto md:w-[520px] md:h-[420px]"
         />
       </div>
     </section>

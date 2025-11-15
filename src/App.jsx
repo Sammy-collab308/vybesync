@@ -11,7 +11,7 @@ import Testimonials from "./components/sections/Testimonials.jsx"
 import Signup from "./pages/Signup"; 
 import Footer from "./components/layout/Footer.jsx";
 import CTA from "./components/sections/CTA.jsx";
-import Login from "./pages/Login";
+import Login from "./pages/Login.jsx";
 
 
 

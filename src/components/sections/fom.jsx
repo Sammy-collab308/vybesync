@@ -56,9 +56,10 @@ function Fom() {
     <section id="events" className="max-w-[1200px] mx-auto px-6 py-20">
       {/* Section Header */}
       <div className="text-center mb-12">
-        <h2 className="text-4xl font-bold text-blue-600 mb-3">
+         <h2 className="text-4xl md:text-5xl font-bold text-purple-600 mb-6 leading-snug">
           Upcoming Live Events
         </h2>
+        
         <p className="text-gray-600 text-lg">
           Discover unforgettable concerts, parties, and nightlife experiences near you.
         </p>
