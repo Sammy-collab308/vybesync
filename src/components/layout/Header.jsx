@@ -19,7 +19,8 @@ function Header() {
       style={{ backgroundImage: `url(${bgImage})` }}
     >
       {/* Navigation */}
-      <div className="absolute top-6 w-full max-w-[1200px] mx-auto px-8 flex justify-between items-center">
+      <div className="absolute top-6 w-full max-w-[1200px] mx-auto px-8 flex justify-between items-center z-50">
+        {/* Logo */}
         <h1 className="text-3xl font-bold tracking-wide">
           <span className="text-purple-500">Vybe</span>
           <span className="text-yellow-400">Sync</span>
@@ -44,7 +45,7 @@ function Header() {
 
       {/* Mobile Dropdown Menu */}
       {menuOpen && (
-        <div className="absolute top-20 w-[90%] mx-auto bg-purple-900/90 border border-yellow-400 rounded-xl p-6 flex flex-col gap-4 text-white md:hidden">
+        <div className="absolute top-20 w-[90%] mx-auto bg-purple-900/90 border border-yellow-400 rounded-xl p-6 flex flex-col gap-4 text-white md:hidden z-40">
           <a href="#home" className="hover:text-yellow-400 transition">Home</a>
           <a href="#events" className="hover:text-yellow-400 transition">Events</a>
           <a href="#about" className="hover:text-yellow-400 transition">About</a>
@@ -53,7 +54,7 @@ function Header() {
       )}
 
       {/* Hero Content */}
-      <div className="text-white max-w-[850px] px-4 flex flex-col justify-center items-center pb-40 md:pb-0">
+      <div className="text-white max-w-[850px] px-4 flex flex-col justify-center items-center pt-24 pb-40 md:pt-0 md:pb-0">
         <h1 className="text-5xl md:text-6xl font-bold mb-4 drop-shadow-lg">
           Discover Unforgettable Events
         </h1>
