@@ -15,12 +15,11 @@ function Header() {
   return (
     <header
       id="home"
-      className="relative w-full h-screen flex flex-col justify-center items-center text-center bg-cover bg-center"
+      className="relative w-full min-h-screen flex flex-col justify-center items-center text-center bg-cover bg-center"
       style={{ backgroundImage: `url(${bgImage})` }}
     >
       {/* Navigation */}
       <div className="absolute top-6 w-full max-w-[1200px] mx-auto px-8 flex justify-between items-center">
-        {/* Logo */}
         <h1 className="text-3xl font-bold tracking-wide">
           <span className="text-purple-500">Vybe</span>
           <span className="text-yellow-400">Sync</span>
@@ -54,7 +53,7 @@ function Header() {
       )}
 
       {/* Hero Content */}
-      <div className="text-white max-w-[850px] px-4 flex flex-col justify-center items-center">
+      <div className="text-white max-w-[850px] px-4 flex flex-col justify-center items-center pb-40 md:pb-0">
         <h1 className="text-5xl md:text-6xl font-bold mb-4 drop-shadow-lg">
           Discover Unforgettable Events
         </h1>
@@ -72,11 +71,10 @@ function Header() {
       </div>
 
       {/* Floating Stats */}
-      <div className="absolute bottom-[-85px] left-1/2 -translate-x-1/2 w-[95%] max-w-[1100px]">
+      <div className="w-[95%] max-w-[1100px] mt-12 md:absolute md:bottom-[-85px] left-1/2 md:-translate-x-1/2">
         <div className="
           bg-gradient-to-r from-purple-900 via-purple-800 to-purple-900
           backdrop-blur-md border border-yellow-400 rounded-2xl shadow-2xl
-          
           h-auto py-6 px-6 
           flex flex-col md:flex-row justify-between items-center
           gap-6 md:gap-0 text-white
