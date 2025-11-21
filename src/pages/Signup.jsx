@@ -6,13 +6,18 @@ function Signup() {
   const [form, setForm] = useState({ name: "", email: "", password: "" });
   const navigate = useNavigate();
 
+  // Backend URL (from Vercel env or fallback)
+  const API_URL =
+    import.meta.env.VITE_BACKEND_URL || "https://vybesync-backend-1.onrender.com";
+
   const handleChange = (e) =>
     setForm({ ...form, [e.target.name]: e.target.value });
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
     try {
-      const res = await fetch("http://localhost:5000/auth/signup", {
+      const res = await fetch(`${API_URL}/api/auth/signup`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
@@ -20,16 +25,17 @@ function Signup() {
 
       const data = await res.json();
 
-      if (res.ok) {
-        // Save token to localStorage
-        localStorage.setItem("token", data.token);
-        alert("Signup successful!");
-        navigate("/"); // Redirect after signup
-      } else {
-        alert(data.message);
+      if (!res.ok) {
+        alert(data.message || "Signup failed");
+        return;
       }
+
+      localStorage.setItem("token", data.token);
+      alert("Signup successful!");
+      navigate("/");
     } catch (err) {
-      alert("Server error!");
+      console.error("Signup error:", err);
+      alert("Server error! Make sure backend is connected.");
     }
   };
 

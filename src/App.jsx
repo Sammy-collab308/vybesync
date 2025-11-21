@@ -17,7 +17,8 @@ function App() {
 
   // ---- Backend Connection Test ----
   useEffect(() => {
-    const API_URL = import.meta.env.VITE_API_URL; // from your .env
+    const API_URL = import.meta.env.VITE_BACKEND_URL || "https://vybesync-backend-1.onrender.com";
+
 
     console.log("Using backend URL:", API_URL);
 
