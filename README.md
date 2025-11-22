@@ -1,7 +1,7 @@
 # VybeSync
 
 ## Live Demo
-[Frontend Live URL](vybesync-k7hyepulq-samuel-njomo-njoroges-projects.vercel.app)
+[Frontend Live URL](https://vybesync-k7hyepulq-samuel-njomo-njoroges-projects.vercel.app)
 [Backend Live URL](https://vybesync-backend-1.onrender.com)
 
 ## Project Overview
